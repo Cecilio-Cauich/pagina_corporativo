@@ -101,6 +101,47 @@ header{
     background:#6cc09070;
 }
 
+/*Personas*/
+#personas{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#personas img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+#personas div{
+    padding: 30px 30px;
+}
+#personas div p{
+    color: #4d4d5c87;
+    font-size: 18px;
+}
+#personas div h4{
+    color: #4D4D5C;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: #6cc091;
+    padding: 10px 30px;
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.boton-saber-mas:hover{
+    background:#6cc091;
+    color: #fff;
+}
 /* RESPONSIVE */
 @media(max-width:768px){
     .mostrar-menu,
@@ -136,6 +177,9 @@ header{
     #check:checked ~ .menu{
         right: 0;
         background: #4d4d5c;
+    }
+    #personas{
+        flex-direction: column;
     }
 } 
 
