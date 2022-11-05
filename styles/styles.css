@@ -186,6 +186,83 @@ header{
     padding: 50px;
 }
 
+#contacto{
+    background: #6cc091;
+    padding: 20px 0px;
+    color: #fff;
+}
+
+#contacto h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form{
+    display: flex;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+textarea{
+    background: #6cc091;
+    border-radius: 10px;
+    border:2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: #4bae77;
+    box-shadow:0 0 0 1px #4bae77;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boton-formulario .boton-saber-mas{
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.45s;
+}
+
+.boton-formulario .boton-saber-mas{
+    background: #4fa776ad;
+}
+/*footer*/
+footer{
+  background: #4D4D5C;
+  color: #cccccc4a;
+  text-align: center;
+  padding: 10px 0px;
+}
 /* RESPONSIVE */
 @media(max-width:768px){
     .mostrar-menu,
@@ -232,6 +309,11 @@ header{
     }
     .contenido-iconos div{
         border: none;
+    }
+
+    /*formulario*/
+    .datos-form{
+        flex-direction: column;
     }
 } 
 
